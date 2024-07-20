@@ -1,0 +1,27 @@
+{
+  "name": "sentiment-analysis-cli",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/commander": "^2.12.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "inversify": "^6.0.2",
+    "ollama": "^0.5.6",
+    "ora": "^8.0.1",
+    "reflect-metadata": "^0.2.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

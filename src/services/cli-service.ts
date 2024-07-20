@@ -28,7 +28,9 @@ export class CLIService {
     const spinner = ora("Analyzing sentiment...").start()
 
     try {
-      const coinData = await this.coinDataService.fetchCoinData(coin)
+      const coinData = await this.coinDataService.fetchCoinData(
+        coin.toUpperCase(),
+      )
       const sentiment = await this.sentimentService.generateSentiment(coinData)
 
       await this.dbService.runQuery(

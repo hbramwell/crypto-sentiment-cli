@@ -33,7 +33,7 @@ export class SentimentAnalysisService {
     try {
       const prompt = `Analyze the following cryptocurrency data and provide a brief sentiment analysis (positive, neutral, or negative) with a short explanation:
       
-      Coin: ${coinData.name}
+      Coin: ${coinData.name.toUpperCase()}
       Price: $${coinData.quote.USD.price.toFixed(2)}
       24h Change: ${coinData.quote.USD.percent_change_24h.toFixed(2)}%
       7d Change: ${coinData.quote.USD.percent_change_7d.toFixed(2)}%

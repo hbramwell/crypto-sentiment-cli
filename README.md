@@ -48,7 +48,7 @@ The Crypto Sentiment Analysis CLI is a powerful, modular TypeScript application 
 Run the CLI using Bun:
 
 ```
-bun run src/index.ts <command> [options]
+bun start <command> [options]
 ```
 
 Available commands:
@@ -62,7 +62,7 @@ Available commands:
 Example:
 
 ```
-bun run src/index.ts analyze BTC
+bun start analyze BTC
 ```
 
 ## Architecture
